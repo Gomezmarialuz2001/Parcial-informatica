@@ -6,71 +6,76 @@
 /* cuerpo de la página */
 body{
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #E8F5FD;
+    color: #062F45;
 
    /*fondo de la página*/
    background-image: url("../img/fondo.png");
-   background-size: 600px;
-   background-position: center;
    background-repeat: repeat;
+   background-size: auto;
+   background-attachment: fixed;
    }
+   h1,h2{font-family: "arvo", serif;}
+   
+
+
 /*contenedor general*/
 .pagina{
-    max-width: 1200px;
-    width: 100%;
+    max-width: 75rem;
+    width: 95%;
     min-height: 100vh;
-    margin: 20px auto;
-    background-color:rgba(255, 255, 255, 0.95);
+    margin: 1.5rem auto;
+    background-color:#E8F5FD;
 }
 /* Titulo principal */
 header h1{
     text-align: center;
     padding: 1rem;
-    font-size: 5rem;
+    font-size: 3.5rem;
     margin: 1rem;
+    color: #062F45;
 }
 /*subtitulo*/
 .subtitulo{
     text-align: center;
-    font-size: 18px;
-    color: black;
+    font-size: 1.1rem;
+    color: #09496C;
     margin-top: -10px;
-    margin-bottom: 25px;
-    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05rem;
 }
 /*menu*/
 nav{
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 2rem;
     
-    background-color: #6d63f5;
-    padding: 15px 30px;
+    background-color: #3FB1EE;
+    padding: 1rem 2rem;
     width: 100%;
-    margin: 20px 0;
+    margin: 1.5rem 0;
 }
 nav a{
     text-decoration: none;
-    color: #333;
-    font-size: 20px;
-    padding-bottom: 2px;
+    color:  #E8F5FD;
+    font-size: 1.1rem;
+    padding-bottom: 0.2rem;
     border-bottom: 2px solid transparent;
 }
 /* Efecto hover para los enlaces del menú */
 nav a:hover{
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #062F45;
 }
 /* =========================
    INDEX
 ========================= */
 .contenedor{
     width: 100%;
-    margin: 60px auto;
+    margin: 3rem auto;
     display: flex;
     align-items: center;
-    gap: 50px;
-    padding: 0 40px;
+    gap: 3rem;
+    padding: 0 2rem;
 }
 /*imagen*/
 .imagen img{
@@ -85,6 +90,7 @@ nav a:hover{
 .texto h2{
     font-size: 32px;
     margin-bottom: 40px;
+    color: #1183C0;
 }
 /*parrafo*/
 .texto p{
@@ -92,6 +98,7 @@ nav a:hover{
     font-size: 17px;
     line-height: 1.6;
     margin-bottom: 40px;
+    color: #09496C;
 }
 /*frase*/
 .frase{
@@ -99,6 +106,7 @@ nav a:hover{
     width: 100%;
     margin: 100px auto 60px auto;
     padding: 0 40px;
+    color: #0D6696;
 }
 .frase blockquote{
     font-size: 25px;
@@ -110,13 +118,14 @@ nav a:hover{
 .frase p{
     font-size: 18px;
     letter-spacing: 2px;
-    color: #777;
+    color: #1183C0;
 }
 /*video de youtube*/
 .video h2{
     text-align: center;
     font-size: 45px;
     margin-bottom: 30px;
+    color: #1183C0;
 }
 .video{
     display: flex;
@@ -127,7 +136,7 @@ nav a:hover{
 .video iframe{
     width: 60%;
     height: 500px;
-    border: none;
+    border: 3px solid #93D3F6;
     border-radius: 10px;
 }
 /*footer*/
@@ -153,6 +162,7 @@ footer{
     text-align: center;
     font-size: 40px;
     margin-bottom: 40px;
+    color: #1183C0;
 }
 /*galeria imagenes*/
 .imagenes{
@@ -176,6 +186,7 @@ footer{
     text-align: center;
     font-size: 40px;
     margin-bottom: 50px;
+    color: #1183C0;
 }
 /*exhibiciones contenedor*/
 .expo-imagenes{
@@ -231,11 +242,83 @@ footer{
     font-size: 38px;
     margin-bottom: 30px;
     text-align: center;
+    color: #1183C0;
 }
 .trayectoria-texto p{
+    letter-spacing: 0.5px;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #09496C;
+}
+.obras-conceptos{
+    text-align: center;
+    margin-top: 100px;
+    padding: 40px;
+}
+.obras-conceptos h2{
+    font-size: 35px;
+    color: #1183C0;
+    margin-bottom: 30px;
+}
+.obras-conceptos ul{
+    list-style: none;
+    padding: 0;
+}
+.obras-conceptos li{
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #062F45;
+}
+/* =========================
+   CONTACTO
+========================= */
+.contacto{
+    width: 100%;
+    padding: 80px 40px;
+}
+.contacto.contenedor{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+/*titulo contacto*/
+.contacto-contenedor h2{
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 60px;
+    color: #1183C0;
+}
+/*texto contacto*/
+.texto-contacto{
     font-size: 20px;
     line-height: 1.8;
-    letter-spacing: 0.5px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.contacto-lista{
+    list-style: none;
+    text-align: center;
+}
+.contacto-lista li{
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.contacto-lista a{
+    text-decoration: none;
+    color: #09496C;
+}
+.contacto-lista a:hover{
+    color:#1183C0;
+    text-decoration: underline;
+}
+.imagen-contacto{
+    display: block;
+    width: 450px;
+    max-width: 90%;
+    margin: 30px auto 40px auto;
 }
 /* =========================
    media queries
