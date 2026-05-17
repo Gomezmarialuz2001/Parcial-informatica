@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/* Estilos para el cuerpo de la página */
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+/* Titulo principal */
+header h1{
+    text-align: center;
+    padding: 1rem;
+    font-size: 5rem;
+    margin: 1rem;
+}
+/*menu*/
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+nav a{
+    text-decoration: none;
+    color: #333;
+    gap: 30px;
+    font-size: 20px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+}
+/* Efecto hover para los enlaces del menú */
+nav a:hover{
+    border-bottom: 2px solid #333;
+}
+/*contenedor principal*/
+.contenedor{
+    width: 80%;
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+/*imagen*/
+.imagen img{
+    width: 600px;
+    height: 650px;
+    object-fit: cover;
+}
+/*texto*/
+.texto{
+    max-width: 650px;
+}
+/*subtitulo*/
+.subtitulo{
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    margin-top: -10px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+.texto h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+/*parrafo*/
+.texto p{
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+/*frase*/
+.frase{
+    text-align: center;
+    width: 70%;
+    margin: 60px auto;
+}
+.frase blockquote{
+    font-size: 32px;
+    line-height: 1.6;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+}
+.frase p{
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #777;
+}
+/*video de youtube*/
+.video h2{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px auto;
+}
+.video iframe{
+    width: 500px;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+}
+/*footer*/
+footer{
+    text-align: center;
+    padding: 40px 0;
+    font-size: 18px;
+}
+@media (max-width: 1000px){
+    .contenedor{
+        flex-direction: column;
+        text-align: center;
+    }
+    .imagen img{
+        width: 100%;
+        height: auto;
+    }
+    .texto h2{
+        font-size: 45px;
+    }
+    .texto p{
+        font-size: 20px;
+    }
+    .video iframe{
+        height: auto;
+    }
+}
